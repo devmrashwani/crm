@@ -1,46 +1,3 @@
-<?php 
-include("./include/auth.php");
-?>
-
-
-<!doctype html>
-<html lang="en" class="semi-dark">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- loader-->
-	  <link href="assets/css/pace.min.css" rel="stylesheet" />
-	  <script src="assets/js/pace.min.js"></script>
-
-    <!--plugins-->
-    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
-    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
-    <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
-    <link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-
-    <!-- CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/icons.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <!--Theme Styles-->
-    <link href="assets/css/dark-theme.css" rel="stylesheet" />
-    <link href="assets/css/semi-dark.css" rel="stylesheet" />
-    <link href="assets/css/header-colors.css" rel="stylesheet" />
-
-    <title>Blackdash - Bootstrap5 Admin Template</title>
-  </head>
-  <body>
-    
-
- <!--start wrapper-->
-    <div class="wrapper">
-
 
 	<!--starts navigation bar / sidebar -->
 
@@ -103,25 +60,23 @@ include("./include/auth.php");
 		  </style>
 
 
-          <h6 class="mb-0 text-uppercase">Follow Leads</h6>
+          <h6 class="mb-0 text-uppercase">Interested</h6>
 				<hr/>
 				<div class="card">
 					<div class="card-body">
 						<div class="table-responsive">
-							<table id="table1" class="table table-striped table-bordered" style="width:100%">
+							<table id="table2" class="table table-striped table-bordered" style="width:100%">
 								<thead>
 									<tr>
 										<th>S. NO</th>
-										<th>Call Date</th>
-										<th>Order Date</th>
-										<th>Order#</th>
+										<th>Order ID</th>
 										<th>Name</th>
+										<th>Requirement Msg</th>
 										<th>Phone no</th>
 										<th>Email</th>
-										<th>Reminder Date</th>
+										<th>Order Date</th>
 										<th>Service</th>
 										<th>University</th>
-										<th>Category</th>
 										<th>Update </th>
 										<th>Bookmark</th>
 									</tr>
@@ -144,7 +99,6 @@ include("./include/auth.php");
 													<tr>
 													<td>$l</td>
 													<td>". $row['call_date'] ." </td>
-													<td>". $row['order_date'] ." </td>
 													<td>". $row['order_no'] ." </td>
 													<td>". $row['name'] ." </td>
 													<td>". $row['phone'] ." </td>
@@ -152,7 +106,6 @@ include("./include/auth.php");
 													<td>". $row['reminder_date'] ." </td>
 													<td>". $row['service'] . "</td>   
 													<td>". $row['university'] . "</td> 
-													<td>". $row['category'] . "</td> 
 													<td>". $row['update_details'] . "</td> 
 													<td>". $row['bookmark'] . "</td>          
 												</tr>
@@ -219,17 +172,15 @@ include("./include/auth.php");
 								</tbody>
 								<tfoot>
 									<tr>
-										<th>S. NO</th>
-										<th>Call Date</th>
-										<th>Order Date</th>
-										<th>Order#</th>
+                                    <th>S. NO</th>
+										<th>Order ID</th>
 										<th>Name</th>
+										<th>Requirement Msg</th>
 										<th>Phone no</th>
 										<th>Email</th>
-										<th>Reminder Date</th>
+										<th>Order Date</th>
 										<th>Service</th>
 										<th>University</th>
-										<th>Category</th>
 										<th>Update </th>
 										<th>Bookmark</th>
 									</tr>

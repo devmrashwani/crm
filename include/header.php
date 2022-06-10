@@ -1,5 +1,43 @@
+ <?php
+ include("auth.php");
+ ?>
  
- 
+<!doctype html>
+<html lang="en" class="semi-dark">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- loader-->
+	  <link href="assets/css/pace.min.css" rel="stylesheet" />
+	  <script src="assets/js/pace.min.js"></script>
+
+    <!--plugins-->
+    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--Theme Styles-->
+    <link href="assets/css/dark-theme.css" rel="stylesheet" />
+    <link href="assets/css/semi-dark.css" rel="stylesheet" />
+    <link href="assets/css/header-colors.css" rel="stylesheet" />
+
+    <title>Ekwik Digital || CRM </title>
+  </head>
+  <body>
+    
+
+ <!--start wrapper-->
+ <div class="wrapper">
  
  
  <!--start sidebar -->
@@ -17,31 +55,97 @@
 		</div>
 		<!--navigation-->
 		<ul class="metismenu" id="menu">
-		  <li>
+		  <!-- <li>
 			<a href="./index.php" class="">
             <div class="parent-icon">
               <i class="bi bi-house-door"></i>
             </div>
 			  <div class="menu-title">Dashboard</div>
 			</a>
-		  </li>
-		  <!-- <li>
-			<a href="./login.php" class="">
-            <div class="parent-icon">
-				<i class="bi bi-headset"></i>
-			  </div>
-			  <div class="menu-title">Login</div>
-			</a>
 		  </li> -->
+		  
 		  <li>
-			<a href="./table-datatable.php" class="">
+			<a href="./addnewlead.php" class="">
             <div class="parent-icon">
-              <i class="bi bi-file-earmark-break"></i>
-            </div>
-			  <div class="menu-title">Follow Leads</div>
+				<i class="bi bi-pencil-square"></i>
+			  </div>
+			  <div class="menu-title">Add New Lead</div>
 			</a>
 		  </li>
-			<a href="https://themeforest.net/user/codervent" target="_blank">
+
+		  <li>
+			<a href="./mylead.php" class="">
+            <div class="parent-icon">
+				<i class="lni lni-notepad"></i>
+			  </div>
+			  <div class="menu-title">My Lead</div>
+			</a>
+		  </li>
+
+		  <li>
+			<a href="./todayreminder.php" class="">
+            <div class="parent-icon">
+				<i class="lni lni-alarm-clock"></i>
+			  </div>
+			  <div class="menu-title">Today Reminder </div>
+			</a>
+		  </li>
+
+		  <li>
+			<a href="./index.php" class="">
+            <div class="parent-icon">
+				<i class="bi bi-person"></i>
+			  </div>
+			  <div class="menu-title">Follow Up</div>
+			</a>
+		  </li>
+
+		  <li>
+			<a href="./interested.php" class="">
+            <div class="parent-icon">
+				<i class="lni lni-checkmark"></i>
+			  </div>
+			  <div class="menu-title">Interested</div>
+			</a>
+		  </li>
+
+		  <li>
+			<a href="./notinterested.php" class="">
+            <div class="parent-icon">
+              <i class="lni lni-close"></i>
+            </div>
+			  <div class="menu-title">Not Interested</div>
+			</a>
+		  </li>
+
+		  <li>
+			<a href="./payment_received.php" class="">
+            <div class="parent-icon">
+			<i class="lni lni-rupee"></i>
+            </div>
+			  <div class="menu-title">Payment Received</div>
+			</a>
+		  </li>
+
+		  <li>
+			<a href="./completed.php" class="">
+            <div class="parent-icon">
+              <i class="lni lni-emoji-cool"></i>
+            </div>
+			  <div class="menu-title"> Completed</div>
+			</a>
+		  </li>
+
+		  <li>
+			<a href="./assigned_leads.php" class="">
+            <div class="parent-icon">
+              <i class="lni lni-share"></i>
+            </div>
+			  <div class="menu-title">Assigned Leads</div>
+			</a>
+		  </li>
+
+			<a href="./support.php" target="_blank">
 			  <div class="parent-icon">
 				<i class="bi bi-headset"></i>
 			  </div>
@@ -59,7 +163,7 @@
 	  <header class="top-header">
 		<nav class="navbar navbar-expand gap-3">
 		  <div class="mobile-menu-button">
-			<i class="bi bi-list"></i>
+			<i class="bi bi-list"></i>~
 		  </div>
 		  <div class="top-navbar-right ms-auto">
   

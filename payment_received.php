@@ -1,5 +1,4 @@
 
-
 	<!--starts navigation bar / sidebar -->
 
 	<!--starts top header-->
@@ -61,25 +60,23 @@
 		  </style>
 
 
-          <h6 class="mb-0 text-uppercase">Follow Leads</h6>
+          <h6 class="mb-0 text-uppercase">Payment Received</h6>
 				<hr/>
 				<div class="card">
 					<div class="card-body">
 						<div class="table-responsive">
-							<table id="table1" class="table table-striped table-bordered" style="width:100%">
+							<table id="table2" class="table table-striped table-bordered" style="width:100%">
 								<thead>
 									<tr>
 										<th>S. NO</th>
-										<th>Call Date</th>
-										<th>Order Date</th>
-										<th>Order#</th>
+										<th>Order ID</th>
+										<th>Payment Date</th>
 										<th>Name</th>
+										<th>Requirement Msg</th>
 										<th>Phone no</th>
 										<th>Email</th>
-										<th>Reminder Date</th>
 										<th>Service</th>
 										<th>University</th>
-										<th>Category</th>
 										<th>Update </th>
 										<th>Bookmark</th>
 									</tr>
@@ -102,7 +99,6 @@
 													<tr>
 													<td>$l</td>
 													<td>". $row['call_date'] ." </td>
-													<td>". $row['order_date'] ." </td>
 													<td>". $row['order_no'] ." </td>
 													<td>". $row['name'] ." </td>
 													<td>". $row['phone'] ." </td>
@@ -110,84 +106,27 @@
 													<td>". $row['reminder_date'] ." </td>
 													<td>". $row['service'] . "</td>   
 													<td>". $row['university'] . "</td> 
-													<td>". $row['category'] . "</td> 
 													<td>". $row['update_details'] . "</td> 
 													<td>". $row['bookmark'] . "</td>          
 												</tr>
 												";
 												$l++;
 
-										?>
-													<!-- <td>
-													<input type='text' value='" . $row['phone'] . "' readonly id='" . $row['phone'] . "'>
-													</td>
-													<td>
-													<input type='text' value='" . $row['email'] . "' readonly id='" . $row['email'] . "'>
-													</td> -->
-													<!-- <i class='fa-solid fa-eye' id='" . $row['order_no'] . "' onclick='toggle()'></i> -->
-										<!-- 
-										<script>
-											let state = false;
-
-										function toggle() {
-											if (state) {
-												document.getElementById($phone).setAttribute("type", "password");
-												document.getElementById($order_no).setAttribute("class", "fa-solid fa-eye");
-												state = false;
-											} else {
-												document.getElementById($email).setAttribute("type", "text");
-												document.getElementById($order_no).setAttribute("class", "fa-solid fa-eye-slash");
-												state = true;
-											}
-										}
-										</script> -->
-
-
-										<?php
-											}
-										}
-										else {
-											echo "
-
-										<tr>
-											<th scope='row'>1</th>  
-													<td> Re </td>
-													<td>". $row['order_date'] ." </td>
-													<td>". $row['order_no'] ." </td>
-													<td>". $row['name'] ." </td>
-													<td>
-													<input type='password' value='" . $row['phone'] . "' readonly id='password'>
-													<i class='fa-solid fa-eye' id='eye' onclick='toggle()'></i>
-													</td>
-													<td>". $row['email'] ." </td>
-													<td>". $row['reminder_date'] ." </td>
-													<td>" . $row['service'] . "</td>   
-													<td>" . $row['university'] . "</td> 
-													<td>" . $row['category'] . "</td> 
-													<td>" . $row['update'] . "</td> 
-													<td>" . $row['bookmark'] . "</td> 
-													
-										</tr>
-										";
-										}
-
-
-										?>
-									
+                                            }
+                                        }
+										?>				
 								</tbody>
 								<tfoot>
 									<tr>
-										<th>S. NO</th>
-										<th>Call Date</th>
-										<th>Order Date</th>
-										<th>Order#</th>
+                                    <th>S. NO</th>
+										<th>Order ID</th>
 										<th>Name</th>
+										<th>Requirement Msg</th>
 										<th>Phone no</th>
 										<th>Email</th>
-										<th>Reminder Date</th>
+										<th>Order Date</th>
 										<th>Service</th>
 										<th>University</th>
-										<th>Category</th>
 										<th>Update </th>
 										<th>Bookmark</th>
 									</tr>
